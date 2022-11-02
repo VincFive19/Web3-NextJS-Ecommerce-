@@ -1,5 +1,4 @@
-# Every package defines its prettier config
-node_modules
-dist
-.next
+.cache
+package.json
+package-lock.json
 public
