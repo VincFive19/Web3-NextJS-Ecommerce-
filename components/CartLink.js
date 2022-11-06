@@ -3,6 +3,7 @@ import { ContextProviderComponent, SiteContext } from '../context/mainContext'
 import { FaShoppingCart, FaCircle } from 'react-icons/fa';
 import Link from "next/link"
 import { colors } from '../theme'
+import WalletButton from './WalletButton';
 const { primary } = colors
 
 function CartLink(props) {
@@ -13,6 +14,11 @@ function CartLink(props) {
   let { context: { numberOfItemsInCart = 0 }} = props
   return (
     <div>
+      
+      <WalletButton>
+        
+      </WalletButton>
+
       <div className="fixed
       sm:top-53 right-24 desktop:right-flexiblemargin
       top-40 z-10">
